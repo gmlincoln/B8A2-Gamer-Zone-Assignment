@@ -175,6 +175,7 @@ nav li > a {
 }
 .instantly-content {
   width: 50%;
+  margin-bottom: 100px;
 }
 .instantly-description {
   text-align: right;
@@ -218,6 +219,48 @@ nav li > a {
   width: 30rem;
 }
 /* Instantly Section End */
+
+/* Game Types Section Start */
+.game-types-section {
+  background: linear-gradient(
+    90deg,
+    rgba(255, 66, 165, 0.03) 0%,
+    rgba(255, 66, 165, 0.03) 100%
+  );
+  padding: 50px 0px;
+}
+.game-types-container {
+  margin: 130px 105px;
+}
+.games-description {
+  display: flex;
+  gap: 20px;
+  justify-content: center;
+  margin-bottom: 30px;
+}
+.game-name {
+  display: flex;
+  gap: 8px;
+  align-items: center;
+  width: 230px;
+  border-radius: 50px;
+  background: #fff;
+}
+
+.game-name p {
+  color: #0b0223;
+  font-size: 15px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
+}
+.game-name:hover {
+  border: 1px solid #ff42a5;
+  width: 228px;
+  color: #ff42a5;
+}
+
+/* Game Types  Section End */
 
 /* Main Section Start */
 
