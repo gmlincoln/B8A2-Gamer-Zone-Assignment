@@ -93,6 +93,11 @@ nav li > a {
   margin: 0 10rem;
   padding: 35px 0px;
 }
+.banner-main-section {
+  background-image: url(../Assets/Group14.png);
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+}
 .banner-container {
   display: flex;
   gap: 10rem;
@@ -159,16 +164,20 @@ nav li > a {
 
 /* Instantly Section Start */
 .instantly {
-  margin: 120px 0;
-  padding: 15em;
+  margin: 120px 240px;
 }
 .instantly-container {
   display: flex;
   gap: 120px;
   width: 100%;
+  justify-content: center;
+  align-items: center;
 }
 .instantly-content {
   width: 50%;
+}
+.instantly-description {
+  text-align: right;
 }
 .instantly-description h2 {
   color: #0b0223;
@@ -176,6 +185,15 @@ nav li > a {
   font-size: 48px;
   font-weight: 700;
   line-height: 60px;
+  margin-bottom: 25px;
+}
+.instantly-description p {
+  color: #534c64;
+  text-align: right;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 30px;
 }
 .instantly-style {
   background: linear-gradient(180deg, #f948b2 0%, #8758f1 100%);
@@ -185,6 +203,7 @@ nav li > a {
 }
 .instantly-img {
   position: relative;
+  width: 23rem;
 }
 .small-img {
   width: 200px;
@@ -227,6 +246,9 @@ nav li > a {
   .header-menu > button {
     width: 75vw;
   }
+  .banner-main-section {
+    background-image: none;
+  }
   .banner-section {
     margin: 0;
     padding: 0;
@@ -244,7 +266,14 @@ nav li > a {
   }
   .banner-description {
     width: 60vw;
+    text-align: center;
+    background-image: url("../Assets/Group14.png");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding: 100px;
   }
+
   .banner-description h2 {
     font-size: 25px;
   }
@@ -262,6 +291,31 @@ nav li > a {
   .banner-button {
     display: flex;
     gap: 10px;
+    justify-content: center;
+  }
+  .instantly {
+    margin: 0;
+  }
+  .instantly-container {
+    flex-direction: column;
+    gap: 120px;
+    width: 100%;
+  }
+  .instantly-content {
+    width: 80vw;
+  }
+  .instantly-description {
+    text-align: center;
+  }
+  .main-img {
+    width: 80vw;
+  }
+  .small-img {
+    width: 150px;
+    height: 165px;
+    border-radius: 5px;
+    bottom: -36px;
+    left: -32px;
   }
 }
 
@@ -287,6 +341,76 @@ nav li > a {
   }
   nav > ul li {
     margin-bottom: 35px;
+  }
+  .banner-main-section {
+    background-image: none;
+  }
+  .banner-section {
+    margin: 0;
+    padding: 0;
+  }
+  .banner-img-container {
+    width: none;
+  }
+  .banner-img-container img {
+    width: 60vw;
+  }
+  .banner-container {
+    flex-direction: column-reverse;
+    align-items: center;
+    gap: 0rem;
+  }
+
+  .banner-description {
+    width: 60vw;
+    text-align: center;
+    background-image: url("../Assets/Group14.png");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+  .banner-description h2 {
+    font-size: 25px;
+  }
+  .banner-goat-color {
+    font-size: 50px;
+  }
+  .btn-same {
+    padding: 10px 20px;
+    margin-bottom: 20px;
+    font-size: 11px;
+  }
+  .banner-description p {
+    font-size: 15px;
+  }
+  .banner-button {
+    display: flex;
+    gap: 10px;
+    justify-content: center;
+  }
+  .instantly {
+    margin: 0;
+  }
+  .instantly-container {
+    flex-direction: column;
+    gap: 120px;
+    width: 100%;
+  }
+  .instantly-content {
+    width: 80vw;
+  }
+  .instantly-description {
+    text-align: center;
+  }
+  .main-img {
+    width: 80vw;
+  }
+  .small-img {
+    width: 150px;
+    height: 165px;
+    border-radius: 5px;
+    bottom: -36px;
+    left: -32px;
   }
 }
 
