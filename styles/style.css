@@ -139,6 +139,7 @@ nav li > a {
   margin-top: 30px;
 }
 .btn-same {
+  cursor: pointer;
   padding: 21px 40px;
   border-radius: 48px;
   color: #fff;
@@ -465,7 +466,6 @@ nav li > a {
   .header-menu > button {
     width: 75vw;
   }
-  /* Banner Section Style */
   .banner-main-section {
     background-image: none;
   }
@@ -491,7 +491,7 @@ nav li > a {
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
-    padding: 100px;
+    padding: 75px;
   }
 
   .banner-description h2 {
@@ -564,7 +564,52 @@ nav li > a {
   .copyrights {
     font-size: 10px;
   }
+  .online-game-content {
+    grid-template-columns: repeat(1, 1fr);
+    justify-items: center;
+  }
+  .games-header-content p {
+    font-size: 16px;
+  }
+  .online-game-description figure {
+    width: 60vw;
+  }
+  .online-game-description > figure img {
+    width: 45vw;
+  }
+  .online-game-description:hover .box {
+    height: 196px;
+    width: 44vw;
+    bottom: 135px;
+    left: 29px;
+  }
 }
+@media screen and (max-width: 425px) {
+  .online-game-description:hover .box {
+    height: 221px;
+    width: 45vw;
+    bottom: 108px;
+    left: 32px;
+  }
+}
+@media screen and (max-width: 375px) {
+  .online-game-description:hover .box {
+    height: 197px;
+    width: 45vw;
+    bottom: 133px;
+    left: 27px;
+  }
+}
+/* Mobile_S */
+@media screen and (max-width: 320px) {
+  .online-game-description:hover .box {
+    height: 169px;
+    width: 45vw;
+    bottom: 162px;
+    left: 24px;
+  }
+}
+
 /* Medium Screen Style */
 
 @media screen and (min-width: 577px) and (max-width: 992px) {
@@ -614,6 +659,7 @@ nav li > a {
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
+    padding: 180px;
   }
   .banner-description h2 {
     font-size: 25px;
@@ -685,6 +731,26 @@ nav li > a {
   .copyrights {
     font-size: 12px;
   }
+
+  .online-game-content {
+    grid-template-columns: repeat(1, 1fr);
+    justify-items: center;
+  }
+  .games-header-content p {
+    font-size: 16px;
+  }
+  .online-game-description figure {
+    width: 60vw;
+  }
+  .online-game-description > figure img {
+    width: 45vw;
+  }
+  .online-game-description:hover .box {
+    height: 196px;
+    width: 44vw;
+    bottom: 135px;
+    left: 29px;
+  }
 }
 
 /* For Small Screen Laptop */
@@ -695,8 +761,4 @@ nav li > a {
   .header-menu > button {
     width: 250px;
   }
-}
-
-.hidden {
-  display: none;
 }
