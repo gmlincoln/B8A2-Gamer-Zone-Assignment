@@ -612,7 +612,7 @@ nav li > a {
 
 /* Medium Screen Style */
 
-@media screen and (min-width: 577px) and (max-width: 992px) {
+@media screen and (min-width: 577px) and (max-width: 768px) {
   .header {
     box-shadow: none;
   }
@@ -733,23 +733,24 @@ nav li > a {
   }
 
   .online-game-content {
-    grid-template-columns: repeat(1, 1fr);
+    grid-template-columns: repeat(2, 1fr);
     justify-items: center;
+    padding: 25px;
   }
   .games-header-content p {
     font-size: 16px;
   }
   .online-game-description figure {
-    width: 60vw;
+    width: 40vw;
   }
   .online-game-description > figure img {
     width: 45vw;
   }
   .online-game-description:hover .box {
-    height: 196px;
-    width: 44vw;
-    bottom: 135px;
-    left: 29px;
+    height: 232px;
+    width: 26vw;
+    bottom: 83px;
+    left: 52px;
   }
 }
 
