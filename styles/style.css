@@ -1,0 +1,261 @@
+/* Font Style */
+@import url("https://fonts.googleapis.com/css2?family=Work+Sans:wght@400;500;600;700&display=swap");
+
+/* Common Shared Style */
+* {
+  margin: 0;
+}
+
+body {
+  font-family: "Work Sans", sans-serif;
+}
+
+/*  Header Section Start */
+.header {
+  background: #fff;
+  box-shadow: 0px 4px 30px 0px rgba(0, 0, 0, 0.05);
+}
+.header-container {
+  display: flex;
+  justify-content: space-between;
+  margin: 0 10rem;
+  padding: 35px 0px;
+  align-items: center;
+  font-family: Work Sans;
+}
+.header-logo {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+.header-special-letter {
+  color: #ff42a5;
+}
+.header-logo h2 {
+  color: #0b0223;
+  font-size: 45px;
+  font-weight: 700;
+}
+.header-menu {
+  display: flex;
+  color: #3c354f;
+  align-items: center;
+  font-size: 18px;
+}
+.header-menu > button,
+nav li > a {
+  font-size: 18px;
+  font-weight: 500;
+  color: #3c354f;
+  font-weight: 500;
+}
+
+.header-menu > button {
+  padding: 17px 24px;
+  border: none;
+  border-radius: 8px;
+  background: rgba(11, 2, 35, 0.1);
+  font-family: Work Sans;
+}
+nav > ul {
+  display: flex;
+}
+nav ul > li {
+  margin-right: 30px;
+  list-style: none;
+}
+nav li > a {
+  text-decoration: none;
+}
+.btn-common {
+  text-decoration: none;
+}
+.fa-youtube,
+.fa-tiktok {
+  margin-left: 10px;
+}
+.fa-youtube {
+  color: #f61c0d;
+}
+.fa-tiktok {
+  color: #000;
+}
+
+/*  Header Section End */
+
+/* Main Section Start */
+
+/* Banner Section Start */
+.hidden {
+  display: none;
+}
+.banner-section {
+  margin: 0 10rem;
+  padding: 35px 0px;
+}
+.banner-container {
+  display: flex;
+  gap: 10rem;
+}
+.banner-description {
+  width: 50%;
+  margin: 50px 0;
+  font-family: Work Sans;
+  text-transform: uppercase;
+}
+.banner-description h2 {
+  color: #0b0223;
+  font-size: 48px;
+  font-weight: 600;
+}
+.banner-goat {
+  background: linear-gradient(180deg, #f948b2 0%, #8758f1 100%);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  font-size: 95px;
+  font-weight: 800;
+}
+.banner-description-content {
+  margin-top: 25px;
+}
+.banner-button {
+  margin-top: 30px;
+}
+.btn-same {
+  padding: 21px 40px;
+  border-radius: 48px;
+  color: #fff;
+  font-size: 18px;
+  font-weight: 600;
+  text-transform: uppercase;
+  border: none;
+}
+.pink {
+  background: #ff42a5;
+}
+.blue {
+  background: #4ec5f7;
+}
+.banner-description p {
+  color: #534c64;
+  font-size: 20px;
+  font-weight: 500;
+  line-height: normal;
+  text-transform: lowercase;
+  margin-bottom: 17px;
+}
+.banner-img-container {
+  width: 50%;
+}
+.banner-img-container img {
+  width: 28rem;
+}
+
+/* Instantly Section Start */
+.instantly {
+  margin: 120px 0;
+  padding: 15em;
+}
+.instantly-container {
+  display: flex;
+  gap: 120px;
+  width: 100%;
+}
+.instantly-content {
+  width: 50%;
+}
+.instantly-description h2 {
+  color: #0b0223;
+  font-family: Work Sans;
+  font-size: 48px;
+  font-weight: 700;
+  line-height: 60px;
+}
+.instantly-style {
+  background: linear-gradient(180deg, #f948b2 0%, #8758f1 100%);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+.instantly-img {
+  position: relative;
+}
+.small-img {
+  width: 200px;
+  height: 250px;
+  border-radius: 8px;
+  border: 5px solid #fff;
+  position: absolute;
+  bottom: -90px;
+  left: -95px;
+}
+.main-img {
+  width: 30rem;
+}
+/* Instantly Section End */
+
+/* Main Section Start */
+
+/* Responsive Style for Mobile Devices */
+@media screen and (max-width: 576px) {
+  .header {
+    box-shadow: none;
+  }
+  .header-container,
+  nav > ul,
+  .header-menu {
+    flex-direction: column;
+  }
+  .header-container {
+    margin: 0 20vw;
+  }
+  .header-logo {
+    margin: 100px 0 60px 0;
+  }
+  nav > ul {
+    align-items: center;
+  }
+  nav > ul li {
+    margin-bottom: 35px;
+  }
+  .header-menu > button {
+    width: 65vw;
+  }
+
+  .banner-container {
+    flex-direction: column-reverse;
+  }
+
+  .banner-section {
+    margin: 0 20vw;
+  }
+  .banner-img-container img {
+    width: 100%;
+  }
+}
+
+/* Medium Screen Style */
+
+@media screen and (min-width: 577px) and (max-width: 992px) {
+  .header {
+    box-shadow: none;
+  }
+  .header-container,
+  nav > ul,
+  .header-menu {
+    flex-direction: column;
+  }
+  .header-container {
+    margin: 0 20vw;
+  }
+  .header-logo {
+    margin: 100px 0 60px 0;
+  }
+  nav > ul {
+    align-items: center;
+  }
+  nav > ul li {
+    margin-bottom: 35px;
+  }
+}
