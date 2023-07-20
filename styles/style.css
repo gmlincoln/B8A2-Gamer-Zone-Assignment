@@ -108,7 +108,7 @@ nav li > a {
   font-size: 48px;
   font-weight: 600;
 }
-.banner-goat {
+.banner-goat-color {
   background: linear-gradient(180deg, #f948b2 0%, #8758f1 100%);
   background-clip: text;
   -webkit-background-clip: text;
@@ -119,6 +119,11 @@ nav li > a {
 .banner-description-content {
   margin-top: 25px;
 }
+.fa-play,
+.fa-arrow-down {
+  color: #ff42a5;
+}
+
 .banner-button {
   margin-top: 30px;
 }
@@ -220,18 +225,43 @@ nav li > a {
     margin-bottom: 35px;
   }
   .header-menu > button {
-    width: 65vw;
+    width: 75vw;
   }
-
-  .banner-container {
-    flex-direction: column-reverse;
-  }
-
   .banner-section {
-    margin: 0 20vw;
+    margin: 0;
+    padding: 0;
+  }
+  .banner-img-container {
+    width: none;
   }
   .banner-img-container img {
-    width: 100%;
+    width: 60vw;
+  }
+  .banner-container {
+    flex-direction: column-reverse;
+    align-items: center;
+    gap: 0rem;
+  }
+  .banner-description {
+    width: 60vw;
+  }
+  .banner-description h2 {
+    font-size: 25px;
+  }
+  .banner-goat-color {
+    font-size: 50px;
+  }
+  .btn-same {
+    padding: 10px 20px;
+    margin-bottom: 20px;
+    font-size: 11px;
+  }
+  .banner-description p {
+    font-size: 15px;
+  }
+  .banner-button {
+    display: flex;
+    gap: 10px;
   }
 }
 
@@ -257,5 +287,15 @@ nav li > a {
   }
   nav > ul li {
     margin-bottom: 35px;
+  }
+}
+
+/* For Small Screen Laptop */
+@media screen and (min-width: 993px) and (max-width: 1090px) {
+  nav ul > li {
+    width: 100px;
+  }
+  .header-menu > button {
+    width: 250px;
   }
 }
