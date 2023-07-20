@@ -744,13 +744,13 @@ nav li > a {
     width: 40vw;
   }
   .online-game-description > figure img {
-    width: 45vw;
+    width: 25vw;
   }
   .online-game-description:hover .box {
-    height: 232px;
-    width: 26vw;
-    bottom: 83px;
-    left: 52px;
+    height: 240px;
+    width: 27vw;
+    bottom: 88px;
+    left: 48px;
   }
 }
 
